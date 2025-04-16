@@ -2,7 +2,7 @@
 
 A multi-store e-commerce platform for buying, selling, and managing products. 
 
-Tech Stack:
+### Tech Stack
 
 Backend: Java Spring Boot
 
