@@ -408,12 +408,12 @@ public class Market {
 //            synchronized (managersLock) {
 //                roleFacade.addSystemManager(systemManagerId);
 //            }
-            if (!paymentServicesFacade.addExternalService(paymentURL)){
-                throw new Exception("problem while adding external payment service");
-            };
-            if (!supplyServicesFacade.addExternalService(supplyURL)){
-                throw new Exception("problem while adding external supply service");
-            };
+            // if (!paymentServicesFacade.addExternalService(paymentURL)){
+            //     throw new Exception("problem while adding external payment service");
+            // };
+            // if (!supplyServicesFacade.addExternalService(supplyURL)){
+            //     throw new Exception("problem while adding external supply service");
+            // };
             synchronized (initializedLock) {
                 try {
                     initializedRepository.save(new InitializedStatus(true));
