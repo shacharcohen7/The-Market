@@ -1,0 +1,22 @@
+database:
+  host: localhost
+  port: 3306
+  name: TheMarket-DB
+  username: admin
+  password: secretpassword
+
+
+admin:
+    username: u1
+    password: adminPassword1
+    birthday: "19/09/1996"
+    country: Israel
+    city: Ashdod
+    address: Elul
+    name: David Volodarsky
+
+paymentService:
+  url: https://damp-lynna-wsep-1984852e.koyeb.app/
+
+supplyService:
+  url: httpl://damp-lynna-wsep-1984852e.koyeb.app/

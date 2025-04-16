@@ -1,0 +1,94 @@
+actions:
+  register_users:
+    users: [u2, u3, u4, u5, u6]
+
+  login_user:
+    users: [u2]
+
+  open_store:
+    user: u2
+    store: s1
+
+  add_product_to_store:
+    user: u2
+    store: s1
+    productName: [Bamba]
+
+
+  set_manager_permission:
+    store: s1
+    nominatorUser: u2
+    nominatedUsers: [u3]
+    inventoryPermissions: true
+    purchasePermissions: false
+
+  set_Store_Owner:
+    store: s1
+    nominatorUser: u2
+    nominatedUsers: [u4, u5]
+
+  LogOut:
+    users: [u2]
+
+
+
+users:
+  u2:
+    username: u2
+    password: adminPassword2
+    birthday: "19/09/1992"
+    country: Israel
+    city: Bash
+    address: bashbash
+    name: Nadav Ktalav
+
+  u3:
+    username: u3
+    password: adminPassword3
+    birthday: "19/09/1993"
+    country: Israel
+    city: Bash
+    address: bialik
+    name: Noa Aboody
+
+  u4:
+    username: u4
+    password: adminPassword4
+    birthday: "19/09/1998"
+    country: Israel
+    city: Bash
+    address: Hertzel
+    name: Shahar Cohen
+
+  u5:
+    username: u5
+    password: adminPassword5
+    birthday: "19/09/1994"
+    country: Israel
+    city: Bash
+    address: Hertzel
+    name: Tomer Assayag
+
+  u6:
+    username: u6
+    password: adminPassword6
+    birthday: "19/09/1998"
+    country: Israel
+    city: Bash
+    address: Hertzel
+    name: Nitzan Horovitz
+
+stores:
+  store1:
+    storeName: s1
+    userNameFounder: u2
+    description: Store for the Initialization
+
+products:
+  products1:
+    productName: Bamba
+    price: 30
+    quantity: 20
+    description: Bamba Osem
+    categoryStr: FOOD
+
